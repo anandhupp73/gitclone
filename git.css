@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px;
+    display: grid;
+    background-color: #133d68;
+    justify-content: left;
+    justify-items: left;
+    gap: 10px;
+}
+.firstcolumn{
+    display: flex;
+    gap: 10px;
+    padding-top:10px;
+}
+.menubar{
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.material-symbols-outlined {
+  color: white;
+  font-size: 28px; 
+}
+.giticon{
+    width:40px ;
+    height: 40px;
+}
+.giticon img{
+    padding-top: 2px;
+    width: 90%;
+    height: 90%;
+}
+.dashboard{
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.secondcolumn{
+    display: flex;
+    gap: 10px;
+    justify-content:flex-start;
+    align-items:center;
+    flex: 1;
+    padding-top: 10px;
+}
+.searchbar{
+    margin-top: 5px;
+    width: 240px;
+    height: 40px;
+    /* position: absolute; */
+    display: flex;
+}
+.searchbar input{
+    width: 230px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 35px;
+}
+.search-icon{
+    position: relative;
+    color: #333;
+    left: 25px;
+    top: 5px;
+}
+.copilot{
+  width: 60px;
+  height: 40px;
+  /* background-color: #333; */
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.copilot img{
+    width: 70%;
+    height: 60%;
+}
+.createnew{
+    width: 60px;
+    height: 40px;
+    border:1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+.add{
+   color: white;
+   padding-top: 10px;
+   padding-left:10px ;
+}
+.last3{
+      width: 40px;
+    height: 40px;
+    border:1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
