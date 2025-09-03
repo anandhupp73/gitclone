@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pure CSS Hamburger Drawer</title>
+<style>
+  :root { --nav:#232f3e; --drawer:#37475a; --text:#fff; }
+
+  /* Visually hide the checkbox but keep it interactive */
+  #drawer-toggle{
+    position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;
+  }
+
+  /* NAVBAR */
+  .nav{
+    display:flex; align-items:center; gap:14px;
+    background:var(--nav); color:var(--text);
+    padding:10px 16px; position:relative; z-index:1000;
+    font:14px/1.2 system-ui, Arial, sans-serif;
+  }
+
+  /* Hamburger */
+  .hamburger{
+    width:28px; height:20px; cursor:pointer; display:inline-flex;
+    flex-direction:column; justify-content:space-between; user-select:none;
+  }
+  .hamburger span{ display:block; height:3px; border-radius:2px; background:#fff; }
+
+  .all{ font-weight:600; color:#fff; text-decoration:none; }
+
+  .links{ display:flex; gap:16px; list-style:none; }
+  .links a{ color:#fff; text-decoration:none; opacity:.9; }
+  .links a:hover{ opacity:1; }
+
+  /* DRAWER */
+  .drawer{
+    position:fixed; inset:0 auto 0 0; width:280px; background:var(--drawer);
+    color:#fff; transform:translateX(-100%); transition:transform .28s ease;
+    padding:18px; z-index:2000; overflow:auto;
+  }
+  .drawer h3{ margin:6px 0 12px; }
+  .drawer a{ display:block; padding:8px 0; color:#fff; text-decoration:none; opacity:.95; }
+
+  /* BACKDROP */
+  .backdrop{
+    position:fixed; inset:0; background:#000; opacity:0; visibility:hidden;
+    transition:opacity .28s ease, visibility .28s ease; z-index:1500;
+  }
+
+  /* TOGGLE STATES (checkbox controls both) */
+  #drawer-toggle:checked ~ .drawer{ transform:translateX(0); }
+  #drawer-toggle:checked ~ .backdrop{ opacity:.45; visibility:visible; }
+
+  /* Optional: animate hamburger to X when open */
+  #drawer-toggle:checked + .nav .hamburger span:nth-child(1){ transform:translateY(8px) rotate(45deg); }
+  #drawer-toggle:checked + .nav .hamburger span:nth-child(2){ opacity:0; }
+  #drawer-toggle:checked + .nav .hamburger span:nth-child(3){ transform:translateY(-8px) rotate(-45deg); }
+</style>
+</head>
+<body>
+
+<!-- The checkbox MUST come before nav, drawer and backdrop -->
+<input type="checkbox" id="drawer-toggle" />
+
+<nav class="nav">
+  <label for="drawer-toggle" class="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </label>
+
+  <a href="#" class="all">All</a>
+
+  <ul class="links">
+    <li><a href="#">Fresh</a></li>
+    <li><a href="#">MX Player</a></li>
+    <li><a href="#">Sell</a></li>
+    <li><a href="#">BestSellers</a></li>
+    <li><a href="#">TodaysDeals</a></li>
+    <li><a href="#">Mobiles</a></li>
+  </ul>
+</nav>
+
+<aside class="drawer">
+  <h3>Menu</h3>
+  <a href="#">Home</a>
+  <a href="#">Your Orders</a>
+  <a href="#">Account</a>
+  <a href="#">Customer Service</a>
+  <a href="#">Sign Out</a>
+</aside>
+
+<!-- Click the dim area to close (also a label tied to the checkbox) -->
+<label for="drawer-toggle" class="backdrop" aria-hidden="true"></label>
+
+</body>
+</html>
