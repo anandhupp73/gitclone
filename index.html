@@ -6,63 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="git.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <div class="main">
+        <!-- left-items -->
         <div class="navbar">
-            <div class="firstcolumn">
-                <div class="menubar">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
+            <div class="nav-left">
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="giticon">
-                    <img src="images/giticon.png" alt="">
+                <div class="git-logo">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
                 </div>
-                <div class="dashboard">
-                    <h3>Dashboard</h3>
+                <div class="dash">
+                    Dashboard
                 </div>
             </div>
-            <div class="secondcolumn">
-                <div class="searchbar">
-                    <span class="material-symbols-outlined search-icon">
-                        search
-                    </span>
-                    <input type="text" placeholder="Type / to search">
+            <!-- right-items -->
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Type / to search ">
                 </div>
-                <div class="copilot">
-                    <img src="images/copilot.svg" alt="">
-                    <!-- <select name="copilot" id="">
-                        <option value="one"></option>
-                        <option value="two"></option>
-                    </select> -->
-                </div>
-                <div class="createnew">
-                    <span class="material-symbols-outlined add">
-                        add
-                    </span>
-                </div>
-                <div class="yourissues last3"></div>
-                <div class="pullrequests last3"></div>
-                <div class="notifications last3"></div>
-                <div class="profile last">
+                <!-- right-buttons -->
+                <button class="rit-btn">
+                    <img src="images/giticon.png" alt="git">
+                    <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i>
+                </button>
+
+                <button class="rit-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i>
+                </button>
+
+                <button class="rit-btn"><i class="fa-regular fa-circle"></i></button>
+                <button class="rit-btn"><i class="fa-solid fa-code-branch"></i></button>
+                <button class="rit-btn"><i class="fa-regular fa-envelope"></i></button>
+                <!-- profile icon -->
+                 <div class="p-icon">
                     <img src="images/profile.png" alt="">
-                </div>
+                 </div>
             </div>
-        </div>
-        <div class="secondpart">
-            <div class="left">
-                <div class="topbar">
-                    <div class="resptext">Top repositories</div>
-                    <div class="new">
-                        <button class="newbtn">New</button>
-                    </div>
-                </div>
-            </div>
-            <div class="right">2</div>
         </div>
     </div>
 </body>
