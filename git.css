@@ -234,6 +234,143 @@ body{
     font-size: 13px;
     margin-right: 20px;
 }
+.feed-cards{
+    width: 97%;
+}
+.outer-card{
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+.outer-header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+.outer-header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.outer-header .header-text{
+    display: flex;
+    flex-direction: column;
+}
+.outer-header strong{
+    font-size: 14px;
+    color: #8b949e;
+}
+.outer-header span{
+    font-size: 12px;
+    color:gray;
+}
+.inner-card{
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+.inner-left{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.inner-left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.inner-left .info{
+    display: flex;
+    flex-direction: column;
+}
+.inner-left .info strong{
+    font-size: 14px;
+    color: #c9d1d9;
+}
+.inner-left .info span{
+    font-size: 12px;
+    color: #8b949e;
+}
+.inner-right{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.follow-btn, .star-btn{
+    background: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #c9d1d9;
+    font-size: 14px;
+    cursor: pointer;
+}
+.follow-btn:hover, .star-btn:hover{
+    background: #30363d;
+}
+.menu-btn{
+    background: none;
+    border: none;
+    color: #8b949e;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+.menu-btn:hover{
+    background: #21262d;
+}
+.trending-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.trending-header h3{
+    font-size: 14px;
+    font-weight: normal;
+    color: #c9d1d9;
+}
+.trending-card {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.trending-left {
+    max-width: 75%;
+}
+.trending-left strong {
+    font-size: 14px;
+    color: #c9d1d9;
+}
+.trending-left p {
+    font-size: 13px;
+    color: #8b949e;
+    margin: 6px 0;
+}
+.repo-meta {
+    font-size: 12px;
+    color: #8b949e;
+}
+.trending-right {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 .latest-changes{
     background-color: #141b22;
     display: flex;
