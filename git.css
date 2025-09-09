@@ -135,6 +135,7 @@ body{
     border: 1px solid #9cacbd;
     background:#272c37;
     font-size: 13px;
+    color: white;
     /* margin-right: 20px; */
 }
 .repo{
@@ -171,7 +172,7 @@ body{
 }
 .copilot-box{
     background: #212830;
-    width: 600px;
+    width: 95%;
     padding: 8px 12px;
     border-radius: 12px;
     display: flex;
@@ -212,6 +213,26 @@ body{
 }
 .action-buttons button:hover{
     transform: translateY(-5px);
+}
+.feed{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.feed p{
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.feed button{
+    border: 1px solid gray;
+    background: transparent;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-right: 20px;
 }
 .latest-changes{
     background-color: #141b22;
