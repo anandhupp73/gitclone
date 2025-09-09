@@ -238,7 +238,7 @@ body{
     width: 97%;
 }
 .outer-card{
-    background: #161b22;
+    background:#202930;
     border: 1px solid #30363d;
     border-radius: 8px;
     padding: 16px;
@@ -246,7 +246,8 @@ body{
 }
 .outer-header{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 12px;
     margin-bottom: 14px;
 }
@@ -255,26 +256,31 @@ body{
     height: 40px;
     border-radius: 50%;
 }
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 .outer-header .header-text{
     display: flex;
     flex-direction: column;
 }
 .outer-header strong{
     font-size: 14px;
-    color: #8b949e;
+    color: white;
 }
 .outer-header span{
     font-size: 12px;
     color:gray;
 }
 .inner-card{
-    background: #0d1117;
+    background:#272c37;
     border: 1px solid #30363d;
     border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px;
+    padding: 17px;
 }
 .inner-left{
     display: flex;
@@ -303,16 +309,18 @@ body{
     align-items: center;
     gap: 8px;
 }
-.follow-btn, .star-btn{
+.follow-btn{
     background: #21262d;
-    border: 1px solid #30363d;
+    border: 1px solid #e7ebf0;
     border-radius: 6px;
     padding: 6px 12px;
     color: #c9d1d9;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: bold;
     cursor: pointer;
+    margin-bottom: 20px;
 }
-.follow-btn:hover, .star-btn:hover{
+.follow-btn:hover{
     background: #30363d;
 }
 .menu-btn{
@@ -339,11 +347,11 @@ body{
     color: #c9d1d9;
 }
 .trending-card {
-    background: #0d1117;
+    background: #272c37;
     border: 1px solid #30363d;
     border-radius: 6px;
     padding: 12px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -370,7 +378,22 @@ body{
     align-items: center;
     gap: 6px;
 }
-
+.star-btn{
+    background: #21262d;
+    border: 1px solid #eaeff6;
+    border-radius: 6px;
+    padding: 5px 12px;
+    color: #c9d1d9;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.star-btn:hover{
+    background: #30363d;
+}
 .latest-changes{
     background-color: #141b22;
     display: flex;
@@ -380,7 +403,7 @@ body{
 }
 .l-change-box{
     width: 250px;
-    height: 400px;
+    height: 350px;
     border: 1px solid white;
     border-radius: 6px;
     padding-left: 20px;
