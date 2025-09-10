@@ -1,37 +1,42 @@
-*{
+* {
     padding: 0;
     margin: 0;
     background-color: #202930;
     box-sizing: border-box;
 }
-.main{
+
+.main {
     display: flex;
 }
-.left-section{
+
+.left-section {
     width: 20%;
     display: flex;
     justify-content: flex-start;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-direction: column;
     padding: 15px;
     border-right: 1px solid white;
     height: 100vh;
 }
-.gitlogo img{
+
+.gitlogo img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
-.left-texts{
-    display:flex;
+
+.left-texts {
+    display: flex;
     flex-direction: column;
     font-size: 16px;
-    gap: 15px;
-    padding-left: 30px;
+    /* gap: 15px; */
+    padding-left: 10px;
     width: 250px;
 }
-.left-texts a{
+
+.left-texts a {
     color: white;
     text-decoration: none;
     padding: 8px;
@@ -39,13 +44,205 @@
     border-radius: 6px;
     transition: background 0.3s;
     width: 90%;
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
 }
-.left-texts a:hover{
+
+.left-texts a:hover {
     background-color: #4f5a62;
 }
-.line{
-  width: 100%;
-  height: 1px;
-  background-color: #30363d;
-  margin: 8px 0; 
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #30363d;
+    margin: 8px 0;
+}
+
+.conver {
+    text-align: center;
+    margin: 150px 10px 0px 10px;
+}
+
+.conver h5 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: #c9d1d9;
+}
+
+.conver p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #8b949e;
+}
+
+.profile {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: #c9d1d9;
+    font-size: 15px;
+}
+
+.profile img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.right-section {
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* height: 100vh; */
+}
+
+.chat-box {
+    background-color: #161b22;
+    border: 1px solid #e0e1e2;
+    border-radius: 10px;
+    width: 70%;
+    padding: 16px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.chat-input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #c9d1d9;
+}
+
+.chat-input::placeholder {
+    color: #8b949e;
+}
+
+.chat-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161b22;
+}
+
+.left-options,
+.right-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #161b22;
+}
+
+.left-options button {
+    background: none;
+    border: none;
+    color: #c9d1d9;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.left-options .fa-plus,
+.fa-folder {
+    background: none;
+    border: none;
+    /* font-size: 10px; */
+}
+
+.fa-paper-plane {
+    background: none;
+    font-size: 15px;
+}
+
+.left-options button:hover {
+    color: white;
+}
+
+.right-options select {
+    background: none;
+    border: none;
+    color: #c9d1d9;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.divider {
+    width: 1px;
+    height: 18px;
+    background-color: #30363d;
+}
+
+.send-btn {
+    background: none;
+    border: none;
+    color: #c9d1d9;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    color: white;
+}
+
+.chat-box:focus-within {
+    border-color: #58a6ff;
+}
+
+.five-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.five-buttons button {
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: white;
+    /* background: #161b22; */
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.five-buttons button:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    font-size: 13px;
+    color: #8b949e;
+    bottom: 15px;
+    position: fixed;
+}
+
+.footer a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }

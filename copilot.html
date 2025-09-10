@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="copilot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <div class="main">
         <div class="left-section">
@@ -13,8 +16,8 @@
                 <img src="images/giticon.png" alt="">
             </div>
             <div class="left-texts">
-                <a href="#">New chat</a>
-                <a href="#">Spaces</a>
+                <a href="#"><i class="fa-regular fa-pen-to-square"></i>New chat</a>
+                <a href="#"><i class="fa-regular fa-folder"></i>Spaces</a>
             </div>
             <div class="line">
             </div>
@@ -23,9 +26,45 @@
                 <p>Ask Copilot anything on the right to start your first conversation.</p>
             </div>
             <div class="profile">
-
+                <img src="images/profile.png" alt="">
+                <span>anandhupp73</span>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="coplilotlogo-right">
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div class="chat-box">
+                <input type="text" class="chat-input" placeholder="How can i help you">
+                <div class="chat-footer">
+                    <div class="left-options">
+                        <button><i class="fa-solid fa-plus"></i> Attach</button>
+                        <button><i class="fa-regular fa-folder"></i> Space</button>
+                    </div>
+                    <div class="right-options">
+                        <select>
+                            <option>Gpt-4.1</option>
+                            <option>Gpt-4</option>
+                            <option>Gpt-3.5</option>
+                        </select>
+                        <div class="divider"></div>
+                        <button class="send-btn"><i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- buttons under chatbox -->
+            <div class="five-buttons">
+               <button><i class="fa-regular fa-circle"></i>Create issue <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i></button>
+               <button><i class="fa-regular fa-file"></i>Write code <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i></button>
+               <button><i class="fa-solid fa-code-branch"></i>Git <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i></button>
+               <button><i class="fa-regular fa-circle-xmark"></i>issues <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i></button>
+               <button><i class="fa-solid fa-code-pull-request"></i>Pull requests <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i></button>
+            </div>
+            <div class="footer">
+                <a href="#">Copilot</a> uses AI. Check for mistakes
             </div>
         </div>
     </div>
 </body>
+
 </html>
