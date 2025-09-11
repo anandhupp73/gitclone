@@ -21,32 +21,33 @@
                     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
                 </div>
                 <div class="dash">
-                    Dashboard
+                    Issues
                 </div>
             </div>
             <!-- right-items -->
             <div class="nav-right">
                 <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Type / to search ">
                 </div>
                 <!-- right-buttons -->
-                <button class="rit-btn">
+                <button class="rit-btn r1">
                     <a href="#">
                         <img src="images/giticon.png" alt="git">
                         <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i>
                     </a>
                 </button>
 
-                <button class="rit-btn">
+                <button class="rit-btn r2">
                     <a href="#">
                         <i class="fa-solid fa-plus"></i>
                         <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i>
                     </a>
                 </button>
 
-                <button class="rit-btn"><a href="#"><i class="fa-regular fa-circle"></i></a></button>
-                <button class="rit-btn"><a href="#"><i class="fa-solid fa-code-branch"></i></a></button>
-                <button class="rit-btn"><a href="#"><i class="fa-regular fa-envelope"></i></a></button>
+                <button class="rit-btn r3"><a href="#"><i class="fa-regular fa-circle"></i></a></button>
+                <button class="rit-btn r4"><a href="#"><i class="fa-solid fa-code-branch"></i></a></button>
+                <button class="rit-btn r4"><a href="#"><i class="fa-regular fa-envelope"></i></a></button>
                 <!-- profile icon -->
                 <div class="p-icon">
                     <img src="images/profile.png" alt="">
@@ -54,20 +55,65 @@
             </div>
         </div>
         <!-- section under navbar -->
-        <div class="left-section">
-            <div class="left-linktexts">
-                <a href="#"><i class="fa-regular fa-circle-user"></i>Assigned to me</a>
-                <a href="#"><i class="fa-regular fa-face-smile"></i>Created by me</a>
-                <a href="#"><i class="fa-solid fa-at"></i>Mentioned</a>
-                <a href="#"><i class="fa-regular fa-clock"></i>Recent activity</a>
+        <div class="under-nav-main">
+            <div class="left-section">
+                <div class="left-linktexts">
+                    <a href="#"><i class="fa-regular fa-circle-user"></i>Assigned to me</a>
+                    <a href="#"><i class="fa-regular fa-face-smile"></i>Created by me</a>
+                    <a href="#"><i class="fa-solid fa-at"></i>Mentioned</a>
+                    <a href="#"><i class="fa-regular fa-clock"></i>Recent activity</a>
+                </div>
+                <div class="left-views">
+                    <p>Views</p>
+                    <button class="plus-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
             </div>
-            <div class="left-views">
-                <p>Views</p>
-                <button class="plus-btn">
-                    <i class="fa-solid fa-plus"></i>
-                </button>
-            </div>
+            <div class="right-section">
+                <div class="header">
+                    <h4>Assigned to me</h4>
+                    <button>New issue</button>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="search issues">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="results-box">
+                    <!-- Top bar -->
+                    <div class="results-header">
+                        <span class="count">0 results</span>
+                        <div class="sort">
+                            <i class="fa-solid fa-arrow-down-short-wide"></i> Updated ▼
+                        </div>
+                    </div>
 
+                    <!-- Content -->
+                    <div class="results-content">
+                        <h3>No results</h3>
+                        <p>Try adjusting your search filters.</p>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="footer-left">
+                        <i class="fa-brands fa-github"></i>
+                        <span>© 2025 GitHub, Inc.</span>
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Security</a>
+                        <a href="#">Status</a>
+                        <a href="#">GitHub Community</a>
+                        <a href="#">Docs</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Manage cookies</a>
+                        <a href="#">Do not share my personal information</a>
+                    </div>
+                </footer>
+
+            </div>
         </div>
     </div>
 </body>
