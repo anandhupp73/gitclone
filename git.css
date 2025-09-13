@@ -53,7 +53,11 @@ body{
     width: 100%;
     height: 100%;
 }
+.search-box{
+    flex: 1;
+}
 .search-box input{
+    /* width: 100%; */
     background: #0d1117;
     border: 1px solid #3a3d41;
     border-radius: 6px;
@@ -84,6 +88,7 @@ body{
 .p-icon{
     width: 33px;
     height: 33px;
+    flex-shrink: 0;
     /* border-radius: 50px; */
     /* display: flex;
     align-items: center;
@@ -95,11 +100,14 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 50px;
+    object-fit: cover;
 }
 .sec-section{
     display: grid;
-    grid-template-columns: 25% 55% 20%;
-    height: 100vh;
+    /* grid-template-columns: 25% 55% 20%; */
+    grid-template-columns: .6fr 2fr .5fr;
+    /* height: 100vh; */
+    /* gap: 10px; */
 }
 .left-panel{
     border-right: 1px solid #30363d;
@@ -127,8 +135,11 @@ body{
     font-size: 13px;
     cursor: pointer;
 }
+.repo-box{
+    width: 93%;
+}
 .find-repo{
-    width: 94%;
+    width: 93%;
     padding: 6px 10px;
     margin-bottom: 12px;
     border-radius: 6px;
@@ -355,6 +366,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 97%;
 }
 
 .trending-left {
@@ -436,4 +448,75 @@ body{
     margin-top: 10px;
     font-size: 12px;
     color: gray;
+}
+.top-repo-mobile-only{
+    display: none;
+}
+@media (max-width: 768px) {
+    .rtb1,.rtb2,.rtb3,.rtb4{
+        display: none;
+    }
+    .center-panel{
+        padding: 0;
+    }
+  .sec-section {
+      grid-template-columns: 1fr;  /* single column layout */
+  }
+  .left-panel, .center-panel, .latest-changes {
+      width: 100%;
+      border: none;  /* remove borders on smaller view */
+  }
+  .left-panel{
+    order: 2;
+  }
+  .center-panel{
+    order: 1;
+  }
+  .top-repo-mobile-only{
+    display: block;
+    width: 90%;
+    margin: 0 10px 0 20px;
+  }
+  .top-repo-desktop-only{
+    display: none;
+  }
+  .latest-changes{
+    display: none;
+  }
+  .repo-box{
+    border: 1px solid white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.center-panel h2{
+    margin: 10px 10px 0 10px;
+}
+.copilot-box,.action-buttons{
+    width: 90%;
+    margin: 0px 10px ;
+}
+.outer-card{
+    margin: 0 10px 0 15px;
+}
+}
+@media (max-width:576px){
+    .dash{
+        width: 20px;
+    }
+    .search-box{
+        width: 80px;
+    }
+    .search-box input{
+        width: 40%;
+    }
+    .copilot-box{
+        width: 85%;
+    }
+    .top-repo-mobile-only{
+        width: 85%;
+    }
+    .trending-card{
+        width: 93%;
+    }
 }

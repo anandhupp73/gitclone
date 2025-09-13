@@ -30,23 +30,23 @@
                     <input type="text" placeholder="Type / to search ">
                 </div>
                 <!-- right-buttons -->
-                <button class="rit-btn">
+                <button class="rit-btn rtb1">
                     <a href="#">
                         <img src="images/giticon.png" alt="git">
                         <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i>
                     </a>
                 </button>
 
-                <button class="rit-btn">
+                <button class="rit-btn rtb2">
                     <a href="#">
                         <i class="fa-solid fa-plus"></i>
                         <i class="fa-solid fa-caret-down" style="font-size: 12px;"></i>
                     </a>
                 </button>
 
-                <button class="rit-btn"><a href="#"><i class="fa-regular fa-circle"></i></a></button>
-                <button class="rit-btn"><a href="#"><i class="fa-solid fa-code-branch"></i></a></button>
-                <button class="rit-btn"><a href="#"><i class="fa-regular fa-envelope"></i></a></button>
+                <button class="rit-btn rtb3"><a href="#"><i class="fa-regular fa-circle"></i></a></button>
+                <button class="rit-btn rtb4"><a href="#"><i class="fa-solid fa-code-branch"></i></a></button>
+                <button class="rit-btn rtb5"><a href="#"><i class="fa-regular fa-envelope"></i></a></button>
                 <!-- profile icon -->
                 <div class="p-icon">
                     <img src="images/profile.png" alt="">
@@ -56,17 +56,21 @@
         <!-- part under navbar -->
         <div class="sec-section">
             <div class="left-panel">
+                <div class="top-repo-desktop-only">
                 <div class="left-header">
                     <h3>Top repositories</h3>
                     <button class="new-btn">New</button>
                 </div>
-                <input type="text" placeholder="Find repositories" class="find-repo">
-                <div class="repo"><img src="images/profile.png" alt="">anandhupp/python</div>
-                <div class="repo"><img src="images/profile.png" alt="">anandhupp/apple</div>
-                <div class="repo"><img src="images/profile.png" alt="">anandhupp/amazon</div>
-                <div class="repo"><img src="images/profile.png" alt="">anandhupp/chempakam</div>
-                <div class="show-more">
-                    <a href="#">Show more</a>
+                <div class="repo-box">
+                    <input type="text" placeholder="Find repositories" class="find-repo">
+                    <div class="repo"><img src="images/profile.png" alt="">anandhupp/python</div>
+                    <div class="repo"><img src="images/profile.png" alt="">anandhupp/apple</div>
+                    <div class="repo"><img src="images/profile.png" alt="">anandhupp/amazon</div>
+                    <div class="repo"><img src="images/profile.png" alt="">anandhupp/chempakam</div>
+                    <div class="show-more">
+                        <a href="#">Show more</a>
+                    </div>
+                </div>
                 </div>
             </div>
             <!-- center content -->
@@ -86,6 +90,27 @@
                     </button>
                     <button>⭕ Create an isssue for a bug</button>
                 </div>
+
+                <!-- for small screen -->
+
+                <div class="top-repo-mobile-only">
+                    <!-- <div class="left-panel"> -->
+                        <div class="left-header">
+                            <h3>Top repositories</h3>
+                            <button class="new-btn">New</button>
+                        </div>
+                        <div class="repo-box">
+                            <input type="text" placeholder="Find repositories" class="find-repo">
+                            <div class="repo"><img src="images/profile.png" alt="">anandhupp/python</div>
+                            <div class="repo"><img src="images/profile.png" alt="">anandhupp/apple</div>
+                            <div class="repo"><img src="images/profile.png" alt="">anandhupp/amazon</div>
+                            <div class="repo"><img src="images/profile.png" alt="">anandhupp/chempakam</div>
+                            <div class="show-more">
+                                <a href="#">Show more</a>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
                 <div class="feed">
                     <p>Feed</p>
                     <button class="filter">Filter</button>
@@ -95,11 +120,11 @@
                     <div class="outer-card">
                         <div class="outer-header">
                             <div class="header-left">
-                            <img src="images/hari.png" alt="hari">
-                            <div class="header-text">
-                                <strong>Ha4i606</strong>
-                                <span>followed last week</span>
-                            </div>
+                                <img src="images/hari.png" alt="hari">
+                                <div class="header-text">
+                                    <strong>Ha4i606</strong>
+                                    <span>followed last week</span>
+                                </div>
                             </div>
                             <button class="menu-btn">⋮</button>
                         </div>
@@ -122,11 +147,11 @@
                     <div class="outer-card">
                         <div class="outer-header">
                             <div class="header-left">
-                            <img src="images/hari.png" alt="Hari">
-                            <div class="header-text">
-                                <strong>Ha4i606</strong>
-                                <span>followed 2 weeks ago</span>
-                            </div>
+                                <img src="images/hari.png" alt="Hari">
+                                <div class="header-text">
+                                    <strong>Ha4i606</strong>
+                                    <span>followed 2 weeks ago</span>
+                                </div>
                             </div>
                             <button class="menu-btn">⋮</button>
                         </div>
