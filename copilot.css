@@ -246,3 +246,22 @@
 .footer a:hover {
     text-decoration: underline;
 }
+@media (max-width:768px) {
+    .left-section{
+        display: none;
+    }
+    .right-section{
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .five-buttons{
+        justify-content: center;
+    }
+}
+@media (max-width:576px) {
+     .right-options{
+        display: none;
+    }
+}
