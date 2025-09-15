@@ -6,6 +6,7 @@
 body{
     background: #1a1d21;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 .navbar{
     display: flex;
@@ -207,4 +208,146 @@ body{
 .manage-noti{
     padding: 10px;
     font-weight: 400;
+}
+.right-section{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:15px;
+    flex-direction: column;
+}
+.notification-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.toggle-buttons{
+    display: flex;
+}
+.toggle-buttons button{
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+.noti-search-bar{
+    flex: 1;
+    min-width: 200px;
+}
+.noti-search-bar input{
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color:  #212830;
+}
+.group-dropdown{
+    min-width: 140px;
+}
+.group-dropdown select{
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid white;
+    background-color:  #212830;
+    color: white;
+}
+.clutter-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #212830;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.clutter-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1 1 300px;
+}
+
+.icon-placeholder {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom right, #007bff, #00bfff);
+    border-radius: 6px;
+}
+
+.clutter-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.clutter-text h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.clutter-text p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.clutter-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.clutter-actions button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.btn-dismiss {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.btn-get-started {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+@media (max-width:768px) {
+    .rtb1,.rtb2,.rtb3,.rtb4{
+        display: none;
+    }
+    .left-section{
+        display: none;
+    }
+    .right-section{
+        width: 100%;
+    }
+}
+@media (max-width:576px) {
+    .dash{
+       display: none;
+    }
+    .search-box{
+        width: 80px;
+    }
+    .search-box input{
+        width: 40%;
+    }
 }
